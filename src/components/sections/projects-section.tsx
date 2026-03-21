@@ -1,5 +1,6 @@
 import { Section } from "@/components/layout/section";
 import { ExternalLink, Github } from "lucide-react";
+import portfolioScreenshot from "@/assets/portfolio-screenshot.jpg";
 
 interface Project {
   title: string;
@@ -16,7 +17,7 @@ const projects: Project[] = [
     description:
       "A modern, responsive portfolio built with cutting-edge web technologies. Features smooth animations, dark mode, and a mobile-first approach.",
     technologies: ["React", "TypeScript", "Vite", "Tailwind v4", "shadcn/ui"],
-    imageUrl: "/src/assets/portfolio-screenshot.jpg",
+    imageUrl: portfolioScreenshot,
     githubUrl: "https://github.com/zoesobol/zoesobol-portfolio",
     liveUrl: "#home",
   },

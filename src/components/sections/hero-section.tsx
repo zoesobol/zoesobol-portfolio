@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Sparkles, Mail } from "lucide-react";
+import profilePhoto from "@/assets/profile-photo.jpg";
 
 export function HeroSection() {
   return (
@@ -21,8 +22,8 @@ export function HeroSection() {
           {/* Mobile image: shows between heading and paragraph */}
           <div className="rounded-[2rem] border border-border bg-card p-6 shadow-[var(--shadow)] lg:hidden">
             <img
-              src="/src/assets/profile-photo.jpg"
-              alt="Zoe Sobol"
+              src={profilePhoto}
+              alt="Zoe Sobol with her kitties"
               className="aspect-[4/5] rounded-[1.5rem] object-cover"
             />
           </div>
@@ -56,8 +57,8 @@ export function HeroSection() {
         {/* Desktop image: shows on the right side */}
         <div className="hidden rounded-[2rem] border border-border bg-card p-6 shadow-[var(--shadow)] lg:block">
           <img
-            src="/src/assets/profile-photo.jpg"
-            alt="Zoe Sobol"
+            src={profilePhoto}
+            alt="Zoe Sobol with her kitties"
             className="aspect-[4/5] rounded-[1.5rem] object-cover"
           />
         </div>
