@@ -1,6 +1,7 @@
 import { Section } from "@/components/layout/section";
 import { ExternalLink, Github } from "lucide-react";
 import portfolioScreenshot from "@/assets/portfolio-screenshot.jpg";
+import c1advancedScreenshot from "@/assets/c1advanced-screenshot.jpg";
 
 interface Project {
   title: string;
@@ -20,6 +21,22 @@ const projects: Project[] = [
     imageUrl: portfolioScreenshot,
     githubUrl: "https://github.com/zoesobol/zoesobol-portfolio",
     liveUrl: "#home",
+  },
+  {
+    title: "C1 Advanced Exam Generator",
+    description:
+      "A web application that generates practice exams for the Cambridge C1 Advanced English test. Users can customize their exams and track their progress over time.",
+    technologies: [
+      "React",
+      "TypeScript",
+      "Python",
+      "DRF",
+      "PostgreSQL",
+      "Docker",
+    ],
+    imageUrl: c1advancedScreenshot,
+    githubUrl: "https://github.com/zoesobol/c1-advanced-exam-generator",
+    liveUrl: "https://github.com/zoesobol/c1-advanced-exam-generator",
   },
 ];
 
